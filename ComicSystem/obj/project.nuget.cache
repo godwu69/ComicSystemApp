@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KTzEPMnYLqw=",
+  "dgSpecHash": "+JVE3foFwzA=",
   "success": true,
-  "projectFilePath": "D:\\Code\\ASP.NET\\ComicSystem\\ComicSystem.csproj",
+  "projectFilePath": "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\ComicSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\godwu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\godwu\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

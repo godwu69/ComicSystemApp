@@ -1,0 +1,94 @@
+/* Căn chỉnh chung */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Định dạng cho tiêu đề */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Định dạng cho bảng */
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho các ô của bảng */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td {
+  color: #333;
+}
+
+/* Định dạng cho các liên kết (edit, delete) */
+a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Định dạng cho các ô hành động */
+td div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Tạo hiệu ứng hover cho dòng trong bảng */
+tr:hover {
+  background-color: #f9f9f9;
+}
+/* Container for the actions */
+.actions a {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+  background-color: #0056b3;
+}
+
+/* Delete button with a different color */
+.actions a:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.actions a:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+/* Adding spacing between action buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+}

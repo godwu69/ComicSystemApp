@@ -1,0 +1,30 @@
+<h1>Comic Books System</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Price per day</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of books">
+    <td>{{book.comicBookId}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.pricePerDay}}</td>
+    <td>
+      <div class="actions">
+        <a href="#" (click)="viewBook(book.comicBookId)">View</a>
+
+        <a href="#" (click)="editBook(book.comicBookId)">Edit</a>
+
+        <a href="#" (click)="deleteBook(book.comicBookId)">Delete</a>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

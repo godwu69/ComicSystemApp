@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\ASP.NET\\ComicSystem\\ComicSystem.csproj": {}
+    "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\ComicSystem.csproj": {}
   },
   "projects": {
-    "D:\\Code\\ASP.NET\\ComicSystem\\ComicSystem.csproj": {
+    "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\ComicSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\ASP.NET\\ComicSystem\\ComicSystem.csproj",
+        "projectUniqueName": "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\ComicSystem.csproj",
         "projectName": "ComicSystem",
-        "projectPath": "D:\\Code\\ASP.NET\\ComicSystem\\ComicSystem.csproj",
+        "projectPath": "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\ComicSystem.csproj",
         "packagesPath": "C:\\Users\\godwu\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\ASP.NET\\ComicSystem\\obj\\",
+        "outputPath": "D:\\Code\\ASP.NET\\ComicSystemApp\\ComicSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\godwu\\AppData\\Roaming\\NuGet\\NuGet.Config"
