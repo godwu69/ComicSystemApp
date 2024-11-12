@@ -18,11 +18,11 @@
     <td>{{book.pricePerDay}}</td>
     <td>
       <div class="actions">
-        <a href="#" (click)="viewBook(book.comicBookId)">View</a>
+        <a (click)="viewBook(book.comicBookId)">View</a>
 
-        <a href="#" (click)="editBook(book.comicBookId)">Edit</a>
+        <a (click)="editBook(book.comicBookId)">Edit</a>
 
-        <a href="#" (click)="deleteBook(book.comicBookId)">Delete</a>
+        <a (click)="deleteBook(book.comicBookId)">Delete</a>
       </div>
     </td>
   </tr>

@@ -41,7 +41,9 @@ export class DashboardComponent implements OnInit {
   }
 
   editBook(bookId: number) {
-    this.http.get<any>(`http://localhost:5235/api/comic/${bookId}`).subscribe({
+    this.http.put<any>(`http://localhost:5235/api/comic/${bookId}`,
+      {}
+    ).subscribe({
       next: res => {
         console.log(res);
       },
@@ -52,8 +54,14 @@ export class DashboardComponent implements OnInit {
   }
 
   deleteBook(bookId: number) {
-    console.log('Deleting book with ID:', bookId);
-    // Add logic to confirm and delete the book (e.g., call an API to delete)
+    this.http.delete<any>(`http://localhost:5235/api/comic/${bookId}`).subscribe({
+      next: res => {
+        console.log(res);
+      },
+      error: err => {
+        console.log(err);
+      }
+    });
   }
 
   ngOnInit(): void {
