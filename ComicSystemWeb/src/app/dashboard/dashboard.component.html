@@ -1,30 +1,44 @@
-<h1>Comic Books System</h1>
+  <h1>Comic Books System</h1>
+  <div *ngIf="currentBook" class="book-form">
+    <h2>{{ isEditing ? 'Edit Book' : 'Add New Book' }}</h2>
+    <form (ngSubmit)="saveBook()">
+      <label for="title">Title:</label>
+      <input type="text" id="title" [(ngModel)]="currentBook.title" name="title" required />
 
-<table>
-  <thead>
-  <tr>
-    <th>ID</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Price per day</th>
-    <th>Action</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let book of books">
-    <td>{{book.comicBookId}}</td>
-    <td>{{book.title}}</td>
-    <td>{{book.author}}</td>
-    <td>{{book.pricePerDay}}</td>
-    <td>
-      <div class="actions">
-        <a (click)="viewBook(book.comicBookId)">View</a>
+      <label for="author">Author:</label>
+      <input type="text" id="author" [(ngModel)]="currentBook.author" name="author" required />
 
-        <a (click)="editBook(book.comicBookId)">Edit</a>
+      <label for="price">Price per Day:</label>
+      <input type="number" id="price" [(ngModel)]="currentBook.pricePerDay" name="price" required />
 
-        <a (click)="deleteBook(book.comicBookId)">Delete</a>
-      </div>
-    </td>
-  </tr>
-  </tbody>
-</table>
+      <button type="submit">{{ isEditing ? 'Save Changes' : 'Add Book' }}</button>
+      <button type="button" (click)="resetForm()">Cancel</button>
+    </form>
+  </div>
+  <button (click)="resetForm()">Add New Book</button>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Price per day</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{book.comicBookId}}</td>
+      <td>{{book.title}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.pricePerDay}}</td>
+      <td>
+        <div class="actions">
+          <a (click)="viewBook(book.comicBookId)">View</a>
+          <a (click)="editBook(book.comicBookId)">Edit</a>
+          <a (click)="deleteBook(book.comicBookId)">Delete</a>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>

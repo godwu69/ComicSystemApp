@@ -92,3 +92,27 @@ tr:hover {
   display: flex;
   gap: 10px;
 }
+/* comic-books.component.css */
+.book-form {
+  padding: 20px;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.book-form input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.actions a {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+}
